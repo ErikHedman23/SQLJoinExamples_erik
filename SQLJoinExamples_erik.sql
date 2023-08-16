@@ -22,7 +22,7 @@ ON e.EmployeeID = s.EmployeeID;
 
 -- using multiple joins
 
-SELECT p.Name as "Product Sold", p.Price, p.Quantity as "Amount sold", e.FirstName, e.LastName
+SELECT p.Name as "Product Sold", p.Price, s.Quantity as "Amount sold", e.FirstName, e.LastName
 FROM Products as p
 INNER JOIN Sales as s
 ON p.ProductID = s.ProductID
